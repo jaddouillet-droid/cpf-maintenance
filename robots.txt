@@ -13,4 +13,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://cpfmaintenance.com/sitemap.xml
+Sitemap: https://jaddouillet-droid.github.io/cpf-maintenance/sitemap.xml
