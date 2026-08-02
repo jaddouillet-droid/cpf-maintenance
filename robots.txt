@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jaddouillet-droid.github.io/cpf-maintenance/sitemap.xml
