@@ -3,7 +3,10 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
 
-python3 build.py
+# Pages are committed as unified HTML; rebuild only when legacy sources exist locally.
+if ls _legacy_*.html >/dev/null 2>&1; then
+  python3 build.py
+fi
 
 rm -rf dist
 mkdir -p dist
