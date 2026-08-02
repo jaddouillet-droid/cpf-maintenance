@@ -1,0 +1,17 @@
+{
+  "name": "CPF Maintenance",
+  "short_name": "CPF",
+  "description": "Entretien et dépannage de pompes à chaleur, Nord (59) et Pas-de-Calais (62).",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#12293D",
+  "lang": "fr-FR",
+  "icons": [
+    {
+      "src": "images/favicon.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    }
+  ]
+}
