@@ -263,6 +263,17 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:52px 0 0;font-s
 .footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:14px;}
 .footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:20px 0;font-size:0.76rem;color:rgba(255,255,255,0.4);}
 
+
+.advantages-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line);}
+@media(max-width:760px){.advantages-grid{grid-template-columns:1fr;}}
+.pac-info-block{max-width:760px;}
+.pac-info-block h3{font-size:1.02rem;margin:22px 0 8px;}
+.pac-info-block h3:first-of-type{margin-top:0;}
+.pac-info-block p{font-size:0.92rem;margin-bottom:10px;}
+
+.cta-band{border:1px solid var(--line);background:var(--bg-alt);padding:22px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin:0 auto 48px;max-width:1144px;border-radius:4px;}
+.cta-band p{font-size:0.95rem;color:var(--text-dark);font-weight:500;margin:0;max-width:640px;}
+@media(max-width:760px){.cta-band{flex-direction:column;align-items:flex-start;padding:20px;}}
 @media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important;}}
 </style>
 </head>
@@ -333,6 +344,62 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:52px 0 0;font-s
   </div>
 </section>
 
+
+<section id="tout-savoir-pac">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-num">COMPRENDRE LA PAC</span>
+      <h2>Tout savoir sur la pompe à chaleur</h2>
+      <p>Chauffage, eau chaude sanitaire et confort toute l'année : ce que vous devez savoir avant d'installer.</p>
+    </div>
+    <div class="pac-info-block">
+      <h3>Fonctionnement</h3>
+      <p>La pompe à chaleur utilise l'énergie gratuite de l'air pour produire le chauffage et l'eau chaude sanitaire de manière économe et rentable. Le groupe extérieur puise les calories dans l'air extérieur pour les restituer dans le réseau de chauffage central et d'eau chaude du logement, via les unités intérieures.</p>
+      <h3>Rendement</h3>
+      <p>La rentabilité énergétique d'une PAC air-eau est optimale avec des radiateurs basse température. Il existe aussi des pompes à chaleur haute température, adaptées à certains types d'installations existantes.</p>
+      <h3>Un appareil performant</h3>
+      <p>Mode de chauffage écologique et respectueux de l'environnement, durée de vie d'environ 20 ans, installation simple et rapide. L'unité extérieure nécessite une cour ou un jardin, et l'unité intérieure se raccorde à votre circuit de chauffage existant.</p>
+      <h3>PAC réversible</h3>
+      <p>La PAC peut fonctionner en mode réversible : chauffage l'hiver, climatisation l'été. Un vrai confort toute l'année, avec des économies d'énergie à la clé.</p>
+      <h3>Aides et subventions</h3>
+      <p>Prime énergie (engagement Total), crédit d'impôt pour la transition énergétique, éco-prêt à taux zéro pour l'achat d'une PAC air-eau : plusieurs dispositifs peuvent réduire le coût de votre installation.</p>
+    </div>
+    <div class="section-head" style="margin-top:44px;margin-bottom:28px;">
+      <span class="section-num">VOS AVANTAGES</span>
+      <h2>Pourquoi choisir une PAC avec CPF Maintenance</h2>
+    </div>
+    <div class="advantages-grid">
+      <div class="service-card">
+        <div class="service-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+        <h3>Économies considérables</h3>
+        <p>Réduisez durablement vos factures d'énergie grâce à un rendement bien supérieur aux systèmes de chauffage traditionnels.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <h3>Simple et efficace</h3>
+        <p>Installation rapide par nos techniciens Quali-PAC, avec mise en service et réglages inclus.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>Certifié Quali-PAC</h3>
+        <p>Installation conforme aux exigences RGE, condition indispensable pour bénéficier des aides financières.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3>Confort réversible</h3>
+        <p>Chauffage en hiver, climatisation en été : un seul système pour un confort optimal toute l'année.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="padding-top:0;padding-bottom:0;">
+  <div class="wrap">
+    <div class="cta-band">
+      <p>Une question sur l'installation d'une PAC ? Parlez-en à un technicien.</p>
+      <a class="btn btn-orange" href="contact.html">Demander une étude</a>
+    </div>
+  </div>
+</section>
 <section id="etapes" class="process">
   <div class="wrap">
     <div class="section-head">
@@ -345,6 +412,15 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:52px 0 0;font-s
       <div class="step"><span class="step-num">02</span><h3>Devis &amp; aides</h3><p>Devis détaillé, éligibilité aux aides EDF et dossier monté avec vous.</p></div>
       <div class="step"><span class="step-num">03</span><h3>Pose certifiée</h3><p>Installation par technicien Quali-PAC, mise en service et réglages.</p></div>
       <div class="step"><span class="step-num">04</span><h3>Suivi 2 ans</h3><p>Garantie pièces et main d'œuvre, premier entretien inclus.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;padding-bottom:0;">
+  <div class="wrap">
+    <div class="cta-band">
+      <p>Besoin d'un devis pour l'installation d'une pompe à chaleur ?</p>
+      <a class="btn btn-orange" href="contact.html">Obtenir un devis gratuit</a>
     </div>
   </div>
 </section>

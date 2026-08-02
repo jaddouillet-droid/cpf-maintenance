@@ -263,6 +263,18 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:52px 0 0;font-s
 .footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:14px;}
 .footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:20px 0;font-size:0.76rem;color:rgba(255,255,255,0.4);}
 
+
+.zones-grid-top{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line);}
+.zones-grid-bottom{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-left:1px solid var(--line);}
+.zones-grid-top .service-card,.zones-grid-bottom .service-card{border-right:1px solid var(--line);border-bottom:1px solid var(--line);}
+@media(max-width:760px){.zones-grid-top,.zones-grid-bottom{grid-template-columns:1fr;}}
+.edu-block{max-width:760px;}
+.edu-block p{margin-bottom:14px;font-size:0.92rem;}
+.edu-block p:last-child{margin-bottom:0;}
+
+.cta-band{border:1px solid var(--line);background:var(--bg-alt);padding:22px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin:0 auto 48px;max-width:1144px;border-radius:4px;}
+.cta-band p{font-size:0.95rem;color:var(--text-dark);font-weight:500;margin:0;max-width:640px;}
+@media(max-width:760px){.cta-band{flex-direction:column;align-items:flex-start;padding:20px;}}
 @media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important;}}
 </style>
 </head>
@@ -314,28 +326,44 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:52px 0 0;font-s
     <div class="section-head">
       <span class="section-num">ZONES D'INTERVENTION</span>
       <h2>Chaque paroi en contact avec l'extérieur compte</h2>
-      <p>Des murs à la porte, en passant par les autres ouvertures ou le plafond, chaque partie doit être traitée pour un résultat mesurable sur le DPE.</p>
+      <p>Des combles au vide-sanitaire, chaque zone traitée contribue à un résultat mesurable sur le DPE et sur votre facture de chauffage.</p>
     </div>
-    <div class="services-grid" style="grid-template-columns:repeat(3,1fr);">
-      <div class="service-card">
-        <div class="service-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 21V9"/></svg></div>
-        <h3>Isolation des murs</h3>
-        <p>Par l'extérieur ou l'intérieur : la solution la plus efficace thermiquement, préservant votre surface habitable.</p>
-      </div>
+    <div class="zones-grid-top">
       <div class="service-card">
         <div class="service-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 21V9l8-6 8 6v12M9 21v-6h6v6"/></svg></div>
-        <h3>Combles &amp; toiture</h3>
-        <p>Jusqu'à 30% des déperditions passent par le toit — l'isolation la plus rentable au m².</p>
+        <h3>Combles perdus et aménagés</h3>
+        <p>Une toiture mal isolée représente au moins 30&nbsp;% des déperditions énergétiques d'un logement. L'isolation des combles — perdus ou aménagés — offre l'un des meilleurs rapports coût/bénéfice en rénovation énergétique.</p>
+        <p>Que vos combles servent de réserve ou d'espace habitable, une couche isolante homogène limite les ponts thermiques et stabilise la température dans toute la maison.</p>
       </div>
       <div class="service-card">
         <div class="service-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="10" width="16" height="10" rx="1"/><path d="M9 10V6a3 3 0 016 0v4"/></svg></div>
-        <h3>Sous-sol &amp; garage</h3>
-        <p>La pièce la plus froide du logement, souvent négligée, se doit d'être parfaitement isolée.</p>
+        <h3>Garage</h3>
+        <p>Le garage est souvent négligé lors de la construction, mais il doit bénéficier d'une isolation thermique performante, en particulier s'il est mitoyen à l'habitation.</p>
+        <p>Une paroi non isolée entre le garage et les pièces de vie devient un véritable dissipateur de chaleur — et de confort — en hiver comme en été.</p>
+      </div>
+    </div>
+    <div class="zones-grid-bottom">
+      <div class="service-card">
+        <div class="service-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 21V9"/></svg></div>
+        <h3>Murs intérieurs et extérieurs</h3>
+        <p>Les transferts de chaleur entre l'intérieur et l'extérieur sont naturels : sans isolation, les murs deviennent le principal vecteur de déperdition après la toiture.</p>
+        <p>L'isolation par l'extérieur (ITE) est particulièrement efficace thermiquement et préserve votre surface habitable, contrairement à certains traitements intérieurs.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20h16M6 20V10l6-5 6 5v10"/></svg></div>
+        <h3>Sous-sols</h3>
+        <p>Le sous-sol est souvent la pièce la plus froide de la maison. Pour garantir un confort thermique homogène, il doit être parfaitement isolé des parois et du sol.</p>
+        <p>Un sous-sol froid remonte la sensation de humidité et alimente les déperditions vers les pièces de vie situées au-dessus.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="8" width="18" height="12" rx="1"/><path d="M7 8V5h10v3"/></svg></div>
+        <h3>Vide-sanitaire</h3>
+        <p>La création d'un vide-sanitaire de 20 à 50&nbsp;cm entre le plancher et la terre protège des écoulements d'eau et isole efficacement du froid remontant.</p>
+        <p>Si la maison est construite à même le sol, il est possible de coller une ou deux plaques isolantes rigides sous le plancher pour obtenir un résultat comparable.</p>
       </div>
     </div>
   </div>
 </section>
-
 <section style="padding-top:0;">
   <div class="wrap split">
     <div>
@@ -353,6 +381,38 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:52px 0 0;font-s
       <div class="row"><div class="lbl">Déperditions thermiques par la toiture</div><div class="big">≈ 30%</div></div>
       <div class="row"><div class="lbl">Déperditions thermiques par les murs</div><div class="big">≈ 25%</div></div>
       <div class="row"><div class="lbl">Gain moyen sur facture de chauffage</div><div class="big">-20 à -30%</div></div>
+    </div>
+  </div>
+</section>
+
+
+<section style="padding-top:0;padding-bottom:0;">
+  <div class="wrap">
+    <div class="cta-band">
+      <p>Une question sur l'isolation de votre logement ? Parlez-en à un technicien.</p>
+      <a class="btn btn-orange" href="contact.html">Nous contacter</a>
+    </div>
+  </div>
+</section>
+<section id="isolation-1euro" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-num">AIDE FINANCIÈRE</span>
+      <h2>Isolation à 1€ : ce qu'il faut savoir</h2>
+    </div>
+    <div class="edu-block">
+      <p>Le dispositif d'isolation à tarif avantageux repose sur le principe pollueur-payeur, instauré par la loi POPE de 2005. Les entreprises du secteur de l'énergie financent une partie des travaux d'économie d'énergie via les Certificats d'Économies d'Énergie (CEE), lancés la même année.</p>
+      <p>En contrepartie de ce financement, l'entreprise reçoit un certificat d'économie d'énergie répondant aux exigences fixées par l'État. C'est ce mécanisme qui permet de proposer des isolations à des tarifs très réduits, voire symboliques.</p>
+      <p>Concrètement, l'isolant est soufflé sur la zone à isoler à l'aide d'un tuyau relié à une cardeuse souffleuse (laine de verre ou ouate de cellulose). Cette technique forme une couche isolante uniforme qui supprime les ponts thermiques et améliore immédiatement la performance du logement.</p>
+      <p>Aujourd'hui, l'ensemble des ménages français peut bénéficier de ce tarif avantageux. Le dispositif n'est plus réservé aux ménages modestes comme au départ : chaque propriétaire peut vérifier son éligibilité selon le type de travaux et la zone à traiter.</p>
+    </div>
+  </div>
+</section>
+<section style="padding-top:0;padding-bottom:0;">
+  <div class="wrap">
+    <div class="cta-band">
+      <p>Vérifier votre éligibilité à l'isolation à tarif avantageux ? Nos techniciens vous orientent.</p>
+      <a class="btn btn-orange" href="contact.html">Tester mon éligibilité</a>
     </div>
   </div>
 </section>
