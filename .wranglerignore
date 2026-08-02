@@ -1,0 +1,7 @@
+.git
+_legacy_*
+build.py
+wrangler.jsonc
+.github
+node_modules
+.wrangler
