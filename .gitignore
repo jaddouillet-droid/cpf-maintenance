@@ -1,6 +1,2 @@
 .DS_Store
 *.zip
-_legacy_*.html
-dist/
-.wrangler/
-node_modules/
